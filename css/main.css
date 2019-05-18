@@ -60,6 +60,7 @@ footer, header, hgroup, menu, nav, section {
 }
 html,body{
 	height: auto;
+	width: 100%;
 	line-height: 1;
 	color: #ffffff;
 	background-color: #fff;
@@ -95,24 +96,36 @@ INDEX CSS
 */
 
 /* INTRO PAGE */
-
+.particle-box {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
 section {
   height: 100vh;
   position: relative;
   width: 100%;
+	/* overflow: hidden; */
+	display: flex;
+	justify-content: center;
 }
-.link-container, .title-wrapper {
+.title-wrapper {
   background-color: #101010;
 }
 
 .link-container {
   width: 100%;
-  position: absolute;
-  z-index: 1;
+  position: fixed;
+  z-index: 2;
+	padding: 64px;
 }
 .link-container .main-nav {
   display: flex;
   justify-content: space-between;
+	align-items: center;
+	margin: 0 70px;
 }
 .link-container .main-nav .logo {
   display: block;
@@ -121,15 +134,12 @@ section {
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  margin-top: 64px;
-  margin-left: 70px;
 }
 .link-container .main-nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 64px;
-  margin-right: 70px;
+
 }
 .link-container .main-nav ul li a {
   text-decoration: none;
@@ -256,32 +266,19 @@ section {
 
 .works-wrapper {
   position: absolute;
-  /* background: #ffffff; */
   width: 100%;
-  /* to let particles not show in images */
   z-index: 2;
 }
 .works-wrapper img {
   position: absolute;
   width: 558px;
   height: 695px;
-  /* margin: 20px; */
 }
 .feature-left {
   position: relative;
   margin: 200px;
   height: 100vh;
-}
-.img1-border {
-  width: 668px;
-  height: 804px;
-  border:0px solid #FFEDED;
-  display: flex;
-  background: #FFEDED;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 0;
+	display: flex;
 }
 .feature-left-text {
   position: absolute;
@@ -305,23 +302,10 @@ section {
   font-weight: normal;
   font-size: 130px;
 }
-
 .feature-right {
   position: relative;
   margin: 200px;
   height: 100vh;
-}
-.img2-border {
-  width: 668px;
-  height: 804px;
-  border:0px solid #FFEDED;
-  display: flex;
-  background: #FFEDED;
-  align-items: center;
-  justify-content: center;
-  align-content: right;
-  position: absolute;
-  right: 0;
 }
 .feature-right-text {
   position: absolute;

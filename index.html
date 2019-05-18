@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.33, maximum-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Chris Chen Portfolio</title>
 
@@ -10,11 +11,13 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 <body>
-
-  <div id="particles-js"></div>
+  <div class="particle-box">
+    <div id="particles-js"></div>
+  </div>
   <section class="section-intro">
     <div class="link-container">
       <nav class="main-nav">
@@ -51,35 +54,43 @@
   <section class="section-works">
     <div class="works-wrapper">
       <div class="feature-left">
-        <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FFEDED;align-items:center;justify-content:center;position:absolute;left:0;"><img src="img/promised-land.jpg" alt=""></div>
-        <div class="feature-left-text">
-          <p>C4D, PS, AE</p>
-          <h1>PROMISED<br>LAND</h1>
-          <p>2019</p>
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FFEDED;align-items:center;justify-content:center;position:absolute;left:0;" class="img-border-left"><img src="img/promised-land.jpg" alt=""></div>
+          <div class="feature-left-text">
+            <p>C4D, PS, AE</p>
+            <h1>PROMISED<br>LAND</h1>
+            <p>2019</p>
+          </div>
         </div>
       </div>
       <div class="feature-right">
-        <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDFBFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;"><img src="img/slipspace.jpg" alt=""></div>
-        <div class="feature-right-text">
-          <p>C4D, PS, AE</p>
-          <h1>SLIPSPACE</h1>
-          <p>2019</p>
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDFBFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;" class="img-border-right"><img src="img/slipspace.jpg" alt=""></div>
+          <div class="feature-right-text">
+            <p>C4D, PS, AE</p>
+            <h1>SLIPSPACE</h1>
+            <p>2019</p>
+          </div>
         </div>
       </div>
       <div class="feature-left">
-        <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FAFFED;align-items:center;justify-content:center;position:absolute;left:0;"><img src="img/sanctum.jpg" alt=""></div>
-        <div class="feature-left-text">
-          <p>C4D, PS, AE</p>
-          <h1>SANCTUM</h1>
-          <p>2019</p>
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FAFFED;align-items:center;justify-content:center;position:absolute;left:0;" class="img-border-left"><img src="img/sanctum.jpg" alt=""></div>
+          <div class="feature-left-text">
+            <p>C4D, PS, AE</p>
+            <h1>SANCTUM</h1>
+            <p>2019</p>
+          </div>
         </div>
       </div>
       <div class="feature-right">
-        <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDEDFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;"><img src="img/freedom.jpg" alt=""></div>
-        <div class="feature-right-text">
-          <p>PS</p>
-          <h1>FREEDOM</h1>
-          <p>2018</p>
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDEDFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;" class="img-border-right"><img src="img/freedom.jpg" alt=""></div>
+          <div class="feature-right-text">
+            <p>PS</p>
+            <h1>FREEDOM</h1>
+            <p>2018</p>
+          </div>
         </div>
       </div>
     </div>

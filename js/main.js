@@ -9,12 +9,14 @@ boxes.forEach((box) => {
       easing: 'easeOutExpo',
       scale: 30,
       duration: 1000,
+      delay: 200,
     })
     anime({
       targets: box.querySelector('.reveal-text'),
       opacity: 1,
       translateY: 0,
       duration: 1200,
+      delay: 200,
     })
   })
   box.addEventListener('mouseleave',(event) => {
@@ -25,15 +27,14 @@ boxes.forEach((box) => {
       easing: 'easeOutExpo',
       scale: 1,
       duration: 1000,
+      delay: 100,
     })
     anime({
       targets: box.querySelector('.reveal-text'),
       opacity: 0,
       translateY: 10,
       duration: 1200,
+      delay: 100,
     })
   })
 })
-particlesJS.load('particles-js', 'js/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
