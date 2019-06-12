@@ -96,13 +96,34 @@
     </div>
   </section>
 
+  <!-- SCRIPT IMPORTS -->
   <script src="js/anime.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/particles.min.js"></script>
+  <script src="js/baffle.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+
+  <!-- PARTICLES -->
   <script type="text/javascript">
     particlesJS.load('particles-js', 'json/particles.json', function() {
       console.log('callback - particles.js config loaded');
     });
+  </script>
+
+  <!-- BAFFLE -->
+  <script type=text/javascript>
+    const h2 = baffle(".main-title-wrapper h2");
+    h2.set({
+      characters: '▒██ ▓░▓▒< █>░/▒ ░▒░ █░/█> >▓█> ▓▒█ █▓/░ █░<░',
+      speed: 120
+    });
+    h2.start();
+    h2.reveal(4000);
+  </script>
+
+  <!-- RELLAX -->
+  <script type="text/javascript">
+    var parallax = new Rellax('.rellax');
   </script>
 </body>
 </html>

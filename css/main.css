@@ -126,6 +126,7 @@ section {
   justify-content: space-between;
 	align-items: center;
 	margin: 0 70px;
+
 }
 .link-container .main-nav .logo {
   display: block;
@@ -264,6 +265,9 @@ section {
 
 /* FEATURED WORKS */
 
+.img-wrapper {
+	
+}
 .works-wrapper {
   position: absolute;
   width: 100%;
@@ -328,4 +332,11 @@ section {
   font-style: normal;
   font-weight: normal;
   font-size: 130px;
+}
+.img-wrapper div img{
+	opacity: 0.5;
+	transition: all 0.4s ease;
+}
+.img-wrapper div img:hover {
+	opacity: 1;
 }
