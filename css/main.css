@@ -62,7 +62,7 @@ html,body{
 	height: auto;
 	width: 100%;
 	line-height: 1;
-	color: #ffffff;
+	color: #f1f1f2;
 	background-color: #fff;
 	font-family: 'Poppins', sans-serif;
 }
@@ -106,7 +106,7 @@ INDEX CSS
 section {
   height: 100vh;
   position: relative;
-  width: 100%;
+  width: 100vw;
 	/* overflow: hidden; */
 	display: flex;
 	justify-content: center;
@@ -264,11 +264,7 @@ section {
 
 
 /* FEATURED WORKS */
-
-.img-wrapper {
-	
-}
-.works-wrapper {
+/* .works-wrapper {
   position: absolute;
   width: 100%;
   z-index: 2;
@@ -339,4 +335,83 @@ section {
 }
 .img-wrapper div img:hover {
 	opacity: 1;
+} */
+.section-works {
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+.work-container {
+	height: 70vh;
+	width: 100vw;
+	margin-bottom: 20%;
+}
+.works {
+	position: relative;
+	top: 15%;
+	/* width: 100%; */
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1 / span 12;
+	width: 100vw;
+}
+.works-left .works-wrapper {
+	grid-column: 2 / span 4;
+	grid-row: 2 / span 5;
+	width: 100%;
+}
+.works-right .works-wrapper {
+	grid-column: 8 / span 4;
+	grid-row: 2 / span 5;
+	width: 100%;
+}
+.works-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.works-wrapper img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+.img-title {
+	z-index: 3;
+  /* color: #101010; */
+}
+.img-title p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin: -5em 0;
+	color: #101010;
+}
+.img-title h1 {
+  text-align: center;
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+	color: #101010;
+	/* background: #fdfdfd; */
+	padding: 15px 30px;
+}
+.works-left .img-title {
+	grid-column: 6 / span 3;
+	grid-row: 4 / span 1;
+}
+.works-right .img-title {
+	grid-column: 5 / span 3;
+	grid-row: 4 / span 1;
+}
+.overlay {
+	display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
 }

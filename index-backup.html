@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=0.33, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chris Chen Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+  <div class="particle-box">
+    <div id="particles-js"></div>
+  </div>
+  <section class="section-intro">
+    <div class="link-container">
+      <nav class="main-nav">
+        <a href="#home" class="logo">CHRIS A. CHEN</a>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#socials">socials</a></li>
+          <li><a href="gallery.html">gallery</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="title-wrapper">
+      <div class="main-title-wrapper">
+        <h2>DEVELOPER . FULL-STACK</h2>
+        <h1>CHRIS<br>A—CHEN</h1>
+        <div class="hover-polygon">
+          <button class="welcome-btn">
+            <img src="img/hover.svg" class="welcome-btn-img" alt="">
+          </button>
+          <div class="reveal-box">
+            <div class="reveal-source"></div>
+            <p class="reveal-text">WELCOME TO MY<br>PORTFOLIO!</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    <div class="intro-bottom">
+      <p>EXPLORE MY FEATURED WORKS</p>
+      <img src="img/line.svg" alt="">
+    </div>
+  </section>
+
+  <section class="section-works">
+    <div class="works-wrapper">
+      <div class="feature-left">
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FFEDED;align-items:center;justify-content:center;position:absolute;left:0;" class="img-border-left"><img src="img/promised-land.jpg" alt=""></div>
+          <div class="feature-left-text">
+            <p>C4D, PS, AE</p>
+            <h1>PROMISED<br>LAND</h1>
+            <p>2019</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-right">
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDFBFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;" class="img-border-right"><img src="img/slipspace.jpg" alt=""></div>
+          <div class="feature-right-text">
+            <p>C4D, PS, AE</p>
+            <h1>SLIPSPACE</h1>
+            <p>2019</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-left">
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display: flex;background:#FAFFED;align-items:center;justify-content:center;position:absolute;left:0;" class="img-border-left"><img src="img/sanctum.jpg" alt=""></div>
+          <div class="feature-left-text">
+            <p>C4D, PS, AE</p>
+            <h1>SANCTUM</h1>
+            <p>2019</p>
+          </div>
+        </div>
+      </div>
+      <div class="feature-right">
+        <div class="img-wrapper">
+          <div style="width:668px;height:804px;border:0px solid #FFEDED;display:flex;background:#EDEDFF;align-items:center;justify-content:center;align-content:right;position:absolute;right:0;" class="img-border-right"><img src="img/freedom.jpg" alt=""></div>
+          <div class="feature-right-text">
+            <p>PS</p>
+            <h1>FREEDOM</h1>
+            <p>2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCRIPT IMPORTS -->
+  <script src="js/anime.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/particles.min.js"></script>
+  <script src="js/baffle.min.js"></script>
+  <script src="js/rellax.min.js"></script>
+
+  <!-- PARTICLES -->
+  <script type="text/javascript">
+    particlesJS.load('particles-js', 'json/particles.json', function() {
+      console.log('callback - particles.js config loaded');
+    });
+  </script>
+
+  <!-- BAFFLE -->
+  <script type=text/javascript>
+    const h2 = baffle(".main-title-wrapper h2");
+    h2.set({
+      characters: '▒██ ▓░▓▒< █>░/▒ ░▒░ █░/█> >▓█> ▓▒█ █▓/░ █░<░',
+      speed: 120
+    });
+    h2.start();
+    h2.reveal(4000);
+  </script>
+
+  <!-- RELLAX -->
+  <script type="text/javascript">
+    var parallax = new Rellax('.rellax');
+  </script>
+</body>
+</html>
