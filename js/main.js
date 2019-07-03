@@ -1,3 +1,9 @@
+
+// // AJAX RELOADER
+//
+// jQuery(document).ready(function($) {
+//     Barba.Dispatcher.on('transitionCompleted', function (currentStatus, oldStatus, container) {
+
 let boxes = document.querySelectorAll('.hover-polygon');
 
 boxes.forEach((box) => {
@@ -98,3 +104,20 @@ $('.nav-tab').tilt({
     scale: 1.1,
     maxTilt: 5
 });
+
+particlesJS.load('particles-js', 'json/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+const h2 = baffle(".main-title-wrapper h2");
+h2.set({
+  characters: '▒██ ▓░▓▒< █>░/▒ ░▒░ █░/█> >▓█> ▓▒█ █▓/░ █░<░',
+  speed: 120
+});
+h2.start();
+h2.reveal(4000);
+
+
+
+
+// });
+// });

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+  <div class="particle-box">
+    <div id="particles-js"></div>
+  </div>
+  <section class="projects">
+    <div class="link-container">
+      <nav class="main-nav">
+        <a href="index.html" class="logo">CHRIS A. CHEN</a>
+        <ul>
+          <span data-tilt><li class="nav-tab"><a href="about.html">about</a></li></span>
+          <span data-tilt><li class="nav-tab"><a href="portfolio.html">portfolio</a></li></span>
+          <span data-tilt><li class="nav-tab"><a href="gallery.html">gallery</a></li></span>
+          <span data-tilt><li class="nav-tab"><a href="contact.html">contact</a></li></span>
+        </ul>
+      </nav>
+    </div>
+    <div class="projects">
+      <div class="project-grid" id="scene1">
+        <img src="img/png/soiltopargraphy.png" alt="" data-depth="0.2">
+        <div class="description" data-depth="0.2">
+          <h1>Soil TopARgraphy — UBC Launchpad</h1>
+          <p>The Soil TopARgraphy phone app allows UBC students, enrolled in the APBI 200 – Introduction to Soil Science course, to view topographical distribution of different soil types. The objective of the Soil TopARgraphy app is to allow students to learn about the effects of topography on the formation of different soil types through an immersive and visual Augmented Reality (AR) terrain. This app brings interactivity to the APBI 200 lectures and laboratory sessions focused on soil formation and classification, and in turn, promotes student engagement and deeper comprehension of the material.</p>
+        </div>
+      </div>
+      <div class="project-grid" id="scene2">
+        <img src="img/png/kenko.png" alt="" data-depth="0.2">
+        <div class="description" data-depth="0.2">
+          <h1>Kenko — XdHacks 2019 (1st Place)</h1>
+          <p>Sustainable health was an interesting topic to think about and we settled on targeting the sustainability of BC’s healthcare system by building a React Native app that helps patients better manage their rheumatoid arthritis. We chose rheumatoid arthritis because biologic drugs have risen to become BC’s costliest publicly-funded drugs (80 to 182 million from 2011-2017), while also demonstrating a poor adherence rate (11-65%). Going forward, we will dive more into the research at the UBC Faculty of Pharmaceutical Sciences and see what we can learn about building and improving on patient engagement apps like Kenko.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SCRIPT IMPORTS -->
+  <!-- <script src="js/particles.min.js"></script> -->
+  <script src="js/baffle.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/tilt.jquery.min.js"></script>
+  <script src="js/vendor/barba.min.js" type="text/javascript"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

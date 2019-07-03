@@ -120,13 +120,21 @@
   transform: scale(1.2);
   transition: all 0.4s ease;
 }
-.nav-tab {
+/* .nav-tab::after {
   background-position: center;
-  height: 3em;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-10px, -10px);
 }
-.nav-tab:hover {
-  background: url(../img/png/brush09.png);
+.nav-tab:hover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/png/mark06.png);
+  filter: invert(100%);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 50px;
-}
+  background-size: 35px;
+} */
