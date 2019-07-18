@@ -159,7 +159,7 @@ section {
   padding: 25%;
 }
 #resume {
-  font-family: 'Noe Display';
+  font-family: 'NoeDisplay', serif;
   font-style: italic;
   font-weight: normal;
   font-size: 48px;
@@ -174,7 +174,7 @@ section {
 #feel-free {
   grid-column: 2 / span 2;
   text-align: right;
-  font-family: 'Noe Display';
+  font-family: 'NoeDisplay', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 144px;
@@ -203,7 +203,7 @@ section {
   color: #717171;
 }
 .email p {
-  font-family: 'Noe Display';
+  font-family: 'NoeDisplay', serif;
   font-style: italic;
   font-weight: normal;
   font-size: 48px;
@@ -213,7 +213,7 @@ section {
 }
 .networks ul li a {
   text-decoration: none;
-  font-family: 'Noe Display';
+  font-family: 'NoeDisplay', serif;
   font-style: italic;
   font-weight: normal;
   font-size: 48px;
