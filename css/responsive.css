@@ -20,11 +20,17 @@ MEDIA QUERIES
   .link-container {
     padding: 24px 0;
   }
+  .nav-tab {
+    align-items: center;
+  }
   .gallery-link-container {
     padding: 24px;
   }
   .main-nav {
     padding: 0 18px;
+  }
+  .main-nav span {
+    align-items: center;
   }
   .gallery-main-nav {
     padding: 0 18px;
@@ -43,6 +49,7 @@ MEDIA QUERIES
   }
   .main-nav a {
     font-size: 12px;
+    margin-top: 5px;
   }
   .main-nav ul li a {
     font-size: 6px;
@@ -50,6 +57,7 @@ MEDIA QUERIES
   }
   .gallery-main-nav a {
     font-size: 12px;
+    margin-top: 5px;
   }
   .gallery-main-nav ul li a {
     font-size: 6px;
