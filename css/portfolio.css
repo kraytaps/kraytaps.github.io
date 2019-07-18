@@ -136,6 +136,10 @@ section {
   display: flex;
   flex-direction: column;
 }
+.projectsdiv {
+  display: flex;
+  flex-direction: column;
+}
 .project-grid {
   z-index: 3;
   display: grid;

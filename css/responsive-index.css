@@ -1,0 +1,16 @@
+@media screen and (max-device-width: 612px) and (min-device-width: 375px){
+  .feature-left-text {
+    left: 0%;
+    top: 30%;
+  }
+  .feature-right-text {
+    left: 0%;
+    top: 30%;
+  }
+  .feature-left {
+    height: 50vh;
+  }
+  .feature-right {
+    height: 50vh;
+  }
+}
