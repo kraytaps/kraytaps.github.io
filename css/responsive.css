@@ -69,11 +69,11 @@ MEDIA QUERIES
     height: 20vh;
   }
   .projectsdiv {
-    position: absolute;
-    top: -10%;
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: absolute;
+    top: -10%;
   }
   .project-grid {
     z-index: 3;
