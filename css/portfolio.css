@@ -1,0 +1,175 @@
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-regular.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-bold.ttf) format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-regular-italic.ttf) format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-bold-italic.ttf) format('truetype');
+font-weight: bold;
+font-style: italic;
+}
+
+html, body, div, span, applet, object, iframe,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+  cursor: crosshair;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body{
+	height: auto;
+	width: 100%;
+	line-height: 1;
+	color: #f1f1f2;
+	background-color: #101010;
+	font-family: 'Poppins', sans-serif;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0 !important }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+section {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+	/* overflow: hidden; */
+	display: flex;
+	justify-content: center;
+}
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.particle-box {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+.link-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 64px 0;
+  z-index: 2;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+.logo {
+  display: block;
+  font-family: 'NoeDisplay', serif;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #f1f1f2;
+}
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #f1f1f2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  padding: 0 25px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+}
+.projectsdiv {
+  display: flex;
+  flex-direction: column;
+}
+.project-grid {
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(300px, auto);
+  justify-content: center;
+}
+.project-grid img {
+  object-fit: contain;
+  height: 75%;
+  align-self: center;
+  padding: 0 0 0 50%;
+}
+.description {
+  grid-column: 2 / span 2;
+  padding: 2em 10em 0 0 ;
+}
+.description h1 {
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.15em;
+}
+.description p {
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15em;
+}

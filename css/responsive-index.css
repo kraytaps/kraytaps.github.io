@@ -1,0 +1,32 @@
+@media screen and (max-device-width: 612px) and (min-device-width: 375px){
+  .feature-left-text {
+    left: 0%;
+    top: 30%;
+  }
+  .feature-right-text {
+    left: 0%;
+    top: 30%;
+  }
+  .feature-left {
+    height: 50vh;
+  }
+  .feature-right {
+    height: 50vh;
+  }
+  .link-container {
+    padding: 72px 0;
+    height: 10vh;
+  }
+  .main-nav {
+      padding: 0 12px;
+      margin: 0 62px !important;
+    }
+  .logo {
+      white-space: nowrap;
+      font-size: 36px !important;
+    }
+  .main-nav ul li a {
+    font-size: 16px !important ;
+    padding: 0 8px;
+  }
+}

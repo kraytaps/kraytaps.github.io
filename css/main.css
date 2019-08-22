@@ -1,0 +1,438 @@
+/*
+LOADING FONTS
+*/
+
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-regular.ttf) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-bold.ttf) format('truetype');
+font-weight: bold;
+font-style: normal;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-regular-italic.ttf) format('truetype');
+font-weight: normal;
+font-style: italic;
+}
+@font-face {
+font-family: 'NoeDisplay';
+src: url(../fonts/noe-display-bold-italic.ttf) format('truetype');
+font-weight: bold;
+font-style: italic;
+}
+
+/*
+CSS  RESET
+*/
+
+html, body, div, span, applet, object, iframe,
+h2, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	scroll-behavior: smooth;
+  cursor: crosshair;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html,body{
+	height: auto;
+	width: 100%;
+	line-height: 1;
+	color: #f1f1f2;
+	background-color: #fff;
+	font-family: 'Poppins', sans-serif;
+}
+html::-webkit-scrollbar, body::-webkit-scrollbar { width: 0 !important }
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#particles-js {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+
+/*
+INDEX CSS
+*/
+
+/* INTRO PAGE */
+.particle-box {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+section {
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+	/* overflow: hidden; */
+	display: flex;
+	justify-content: center;
+}
+.title-wrapper {
+  background-color: #101010;
+}
+
+.link-container {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+	padding: 64px;
+}
+.link-container .main-nav {
+  display: flex;
+  justify-content: space-between;
+	align-items: center;
+	margin: 0 70px;
+
+}
+.link-container .main-nav .logo {
+  display: block;
+  font-family: 'NoeDisplay', serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.link-container .main-nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.link-container .main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500px;
+  font-size: 14px;
+  letter-spacing: 0.5em;
+  margin: 25px;
+}
+.section-intro .title-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+.main-title-wrapper {
+  position: relative;
+}
+.section-intro h1 {
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 130px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
+.section-intro h2 {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-bottom: -108px;
+}
+.section-intro .hover-polygon {
+  position: absolute;
+  top: 10%;
+  left: 87%;
+}
+.intro-bottom {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: -50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.intro-bottom p {
+  letter-spacing: 0.5em;
+  margin-bottom: 15px;
+  font-size: 11px;
+}
+.intro-bottom img {
+  display: block;
+  mix-blend-mode: difference;
+}
+.hover-polygon {
+  z-index: 100;
+  width: auto;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  overflow: hidden;
+}
+.welcome-btn {
+  background: none;
+  outline: none;
+  border: 0px solid red;
+  transform: none;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+.reveal-text {
+  padding: 10px 20px;
+  opacity: 0;
+  color: #101010;
+  z-index: 12;
+  font-weight: bold;
+  transform: translate(0, 10px);
+  line-height: 150%;
+}
+.reveal-box {
+  position: relative;
+  display: flex;
+  width: 200px;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+  margin-left: 30px;
+}
+.reveal-source {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -300%;
+  left: -10%;
+}
+.welcome-btn {
+  transition: all 0.3s ease;
+}
+.welcome-btn:hover {
+  transform: rotate(45deg) scale(1.1) translate(-2%);
+}
+/*  */
+
+
+
+
+
+
+
+
+/* FEATURED WORKS */
+/* .works-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.works-wrapper img {
+  position: absolute;
+  width: 558px;
+  height: 695px;
+}
+.feature-left {
+  position: relative;
+  margin: 200px;
+  height: 100vh;
+	display: flex;
+}
+.feature-left-text {
+  position: absolute;
+  color: #101010;
+  left: 41%;
+  top: 40%;
+}
+.feature-left-text p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin: -90px 0;
+}
+.feature-left-text h1 {
+  text-align: center;
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 130px;
+}
+.feature-right {
+  position: relative;
+  margin: 200px;
+  height: 100vh;
+}
+.feature-right-text {
+  position: absolute;
+  color: #101010;
+  right: 41%;
+  top: 40%;
+}
+.feature-right-text p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin: -90px 0;
+}
+.feature-right-text h1 {
+  text-align: center;
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 130px;
+}
+.img-wrapper div img{
+	opacity: 0.5;
+	transition: all 0.4s ease;
+}
+.img-wrapper div img:hover {
+	opacity: 1;
+} */
+.section-works {
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+.work-container {
+	height: 70vh;
+	width: 100vw;
+	margin-bottom: 20%;
+}
+.works {
+	position: relative;
+	top: 15%;
+	/* width: 100%; */
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-column: 1 / span 12;
+	width: 100vw;
+}
+.works-left .works-wrapper {
+	grid-column: 2 / span 4;
+	grid-row: 2 / span 5;
+	width: 100%;
+}
+.works-right .works-wrapper {
+	grid-column: 8 / span 4;
+	grid-row: 2 / span 5;
+	width: 100%;
+}
+.works-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+.works-wrapper img {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+.img-title {
+	z-index: 3;
+  /* color: #101010; */
+}
+.img-title p {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin: -5em 0;
+	color: #101010;
+}
+.img-title h1 {
+  text-align: center;
+  font-family: 'NoeDisplay', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 90px;
+	color: #101010;
+	/* background: #fdfdfd; */
+	padding: 15px 30px;
+}
+.works-left .img-title {
+	grid-column: 6 / span 3;
+	grid-row: 4 / span 1;
+}
+.works-right .img-title {
+	grid-column: 5 / span 3;
+	grid-row: 4 / span 1;
+}
+.overlay {
+	display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+.nav-tab a {
+	z-index: 90;
+}
+/* .nav-tab::after {
+	content: "";
+  background-position: center;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  transform: translate(-150px, -10px);
+}
+.nav-tab:hover::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/png/mark06.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35px;
+} */
